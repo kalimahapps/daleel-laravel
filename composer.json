@@ -1,0 +1,16 @@
+{
+    "name": "kalimahapps/laravel",
+    "description": "A demo of laravel documentation using Daleel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abdul Al-Hasany",
+            "email": "kahhar87@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "kalimahapps/daleel": "^1.0"
+    }
+}
