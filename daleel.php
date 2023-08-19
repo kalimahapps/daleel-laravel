@@ -326,14 +326,13 @@ $config->defineConfig(array(
 		'title'          => 'Laravel',
 		'favicon'        => './media/logo.png',
 		'logo'           => './media/logo.png',
-
-		// 'base_path'      => 'laravel',
+		'base_path'      => 'laravel',
 		'main'           => array(
 			'subtitle' => 'Non-official example documentation for Laravel using Daleel',
 			'buttons'  => array(
 				array(
 					'label' => 'Get Started',
-					'link'  => '/{{latest_version}}/installation.html',
+					'link'  => '/laravel/{{latest_version}}/installation.html',
 				),
 				array(
 					'label' => 'GitHub',

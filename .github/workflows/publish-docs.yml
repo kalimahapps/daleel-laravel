@@ -1,6 +1,9 @@
 name: Publish Laravel Docs
 
-on: [push]
+on:
+  push:
+    branches: ["master"]
+    paths: ["daleel.php"]
 
 jobs:
   build:

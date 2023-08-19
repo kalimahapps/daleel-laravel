@@ -1,4 +1,4 @@
-This is an example using [Daleel](https://daleel.kalimah-apps.com/) documentation generator to generate larvel documentation from it API and markdown files.
+This is an example using [Daleel](https://daleel.kalimah-apps.com/docs) documentation generator to generate larvel documentation from it API and markdown files.
 
 It shows how http files can be used to download files from GitHub and then use Daleel to generate documentation from it.
 
