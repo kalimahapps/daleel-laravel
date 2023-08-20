@@ -189,16 +189,16 @@
         },
         {
             "name": "kalimahapps/daleel",
-            "version": "1.0.2",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kalimahapps/daleel.git",
-                "reference": "9cefb783142e551f0fa16187cf93dadbe2c66c43"
+                "reference": "6c7db4bc96a5885dce109b9c9033b5a87522e4a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kalimahapps/daleel/zipball/9cefb783142e551f0fa16187cf93dadbe2c66c43",
-                "reference": "9cefb783142e551f0fa16187cf93dadbe2c66c43",
+                "url": "https://api.github.com/repos/kalimahapps/daleel/zipball/6c7db4bc96a5885dce109b9c9033b5a87522e4a1",
+                "reference": "6c7db4bc96a5885dce109b9c9033b5a87522e4a1",
                 "shasum": ""
             },
             "require": {
@@ -211,11 +211,12 @@
                 "phpdocumentor/reflection-docblock": "^5.3",
                 "phpdocumentor/type-resolver": "^1.7.2",
                 "psr/log": "^3.0",
-                "spatie/commonmark-highlighter": "^3.0",
+                "scrivo/highlight.php": "v9.18.1.10",
                 "symfony/console": "^6.3",
                 "symfony/filesystem": "^6.3",
                 "symfony/finder": "^6.3",
                 "symfony/http-client": "^6.3",
+                "symfony/process": "^6.3",
                 "symfony/yaml": "^6.3"
             },
             "require-dev": {
@@ -256,9 +257,9 @@
             ],
             "support": {
                 "issues": "https://github.com/kalimahapps/daleel/issues",
-                "source": "https://github.com/kalimahapps/daleel/tree/1.0.2"
+                "source": "https://github.com/kalimahapps/daleel/tree/1.0.6"
             },
-            "time": "2023-08-19T10:37:35+00:00"
+            "time": "2023-08-20T17:12:24+00:00"
         },
         {
             "name": "league/commonmark",
@@ -1163,60 +1164,6 @@
             "time": "2022-12-17T21:53:22+00:00"
         },
         {
-            "name": "spatie/commonmark-highlighter",
-            "version": "3.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spatie/commonmark-highlighter.git",
-                "reference": "d707943b3ce47fcd01240bb85b218e280856d017"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spatie/commonmark-highlighter/zipball/d707943b3ce47fcd01240bb85b218e280856d017",
-                "reference": "d707943b3ce47fcd01240bb85b218e280856d017",
-                "shasum": ""
-            },
-            "require": {
-                "league/commonmark": "^2.0",
-                "php": "^7.4|^8.0",
-                "scrivo/highlight.php": "^9.18.1.7"
-            },
-            "require-dev": {
-                "larapack/dd": "^1.0",
-                "phpunit/phpunit": "^8.5|^9.4",
-                "spatie/phpunit-snapshot-assertions": "^2.0|^4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Spatie\\CommonMarkHighlighter\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Sebastian De Deyne",
-                    "email": "sebastian@spatie.be",
-                    "homepage": "https://spatie.be",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Highlight your markdown code blocks with league/commonmark",
-            "homepage": "https://github.com/spatie/commonmark-highlighter",
-            "keywords": [
-                "commonmark-highlighter",
-                "spatie"
-            ],
-            "support": {
-                "issues": "https://github.com/spatie/commonmark-highlighter/issues",
-                "source": "https://github.com/spatie/commonmark-highlighter/tree/3.0.0"
-            },
-            "time": "2021-08-04T18:03:57+00:00"
-        },
-        {
             "name": "symfony/console",
             "version": "v6.3.2",
             "source": {
@@ -2082,6 +2029,67 @@
                 }
             ],
             "time": "2022-11-03T14:55:06+00:00"
+        },
+        {
+            "name": "symfony/process",
+            "version": "v6.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/process.git",
+                "reference": "c5ce962db0d9b6e80247ca5eb9af6472bd4d7b5d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/process/zipball/c5ce962db0d9b6e80247ca5eb9af6472bd4d7b5d",
+                "reference": "c5ce962db0d9b6e80247ca5eb9af6472bd4d7b5d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Process\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Executes commands in sub-processes",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/process/tree/v6.3.2"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-07-12T16:00:22+00:00"
         },
         {
             "name": "symfony/service-contracts",
